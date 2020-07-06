@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    Calculator
+  </header>
+  <form name="myform">
+  <div class="container">	
+<div class="row">
+	<input type="input1" class="form-control" name="fst"  placeholder="input1"> 
+</div>
+ <br>
+<div class="row">
+	<input type="input2" class="form-control"  name="snd"  placeholder="input2"> 
+</div>
+<br>
+<div class="row">
+	<div class="col">
+	<button type="button" onclick="add()" class="btn btn-lg btn-block btn-primary">+</button>
+</div>
+<div class="col">
+	<button type="button" onclick="subtract()" class="btn btn-lg btn-block btn-primary">_</button>
+</div>
+<div class="col">
+	<button type="button" onclick="multiply()" class="btn btn-lg btn-block btn-primary">*</button>
+</div>
+<div class="col">
+	<button type="button" onclick="divide()" class="btn btn-lg btn-block btn-primary">/</button>
+</div>
+
+</div>
+<br>
+<div class="row">
+	<input type="output" class="form-control" name="output" id="output" placeholder="output"> 
+</div>
+  </div>
+
+  </form>
+ 
+  <script type="text/javascript">
+  	function add(){
+  		fst=parseFloat(myform.fst.value);
+  		snd=parseFloat(myform.snd.value);
+  		output=fst+snd;
+  		myform.output.value=output
+
+  	}
+  	function subtract(){
+  		fst=parseFloat(myform.fst.value);
+  		snd=parseFloat(myform.snd.value);
+  		output=fst-snd;
+  		myform.output.value=output
+
+  	}
+  	function multiply(){
+  		fst=parseFloat(myform.fst.value);
+  		snd=parseFloat(myform.snd.value);
+  		output=fst*snd;
+  		myform.output.value=output
+
+  	}
+  	function divide(){
+  		fst=parseFloat(myform.fst.value);
+  		snd=parseFloat(myform.snd.value);
+  		output=fst/snd;
+  		myform.output.value=output
+
+  	}
+  </script>
+</body>
+</html>
